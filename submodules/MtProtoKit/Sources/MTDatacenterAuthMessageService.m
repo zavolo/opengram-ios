@@ -49,25 +49,27 @@ static NSArray<MTDatacenterAuthPublicKey *> *defaultPublicKeys(bool isProduction
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         testingPublicKeys = @[
-            [[MTDatacenterAuthPublicKey alloc] initWithPublicKey:@"-----BEGIN RSA PUBLIC KEY-----\n"
-             "MIIBCgKCAQEAu+3tvscWDAlEvVylTeMr5FpU2AjgqzoQHPjzp69r0YAtq0a8rX0M\n"
-             "Ue78F/FRAqBaEbZW6WBzF3AjOlNYpOtvvwGhl9rGCgziunbd9nwcKJBMDWS9O7Mz\n"
-             "/8xjz/swIB4V56XcjOhrjUHJ/GniFKoum00xeEcYnr5xnLesvpVMq97Ga6b+xt3H\n"
-             "RftHY/Zy1dG5zs8upuiAOlEiKilhu1IthfMjFG3NF6TiGrO9YU3YixFbJy67jtHk\n"
-             "v5FarscM2fC5iWQ2eP1y6jXR64sGU3QjncvozYOePrH9jGcnmzUmj42x/H28IjJQ\n"
-             "9EjEc22sPOuauK0IF2QiCGh+TfsKCK189wIDAQAB\n"
-             "-----END RSA PUBLIC KEY-----"]
+            [[MTDatacenterAuthPublicKey alloc] initWithPublicKey:@"-----BEGIN PUBLIC KEY-----\n"
+             "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy2+9TLsRl6RJV6QG7yXO\n"
+             "Y195odD8+Arn4lBpItEJnPNvvySU12YsOZOtnYi637dc7nEh7LNlAN/pcfq/7IkR\n"
+             "dPayP/pjiDa4i+aSGU01jHv0odR91HeufV5GQS/kfGHQEcehMjYZ5Nj+X4XpoU8z\n"
+             "jM9YSoGzsX3cm1GG8qlO3TYa5D5EfxtwiAFlDnG/ZD2FoAFtnf7iuWx5WHpHLTli\n"
+             "lrXj7tgCQPwvkia7jc5Vekbxy3InYF4CFqzOkmRZfh7yXp8CukgWMk5ujj5vQ5Qw\n"
+             "R8XiLPEI+QO39BiyUu0g2OtOj2oq3hKd9JXKK+T6dkFXbpMy14DNbRIg0qEftHqM\n"
+             "uQIDAQAB\n"
+             "-----END PUBLIC KEY-----"]
         ];
 
         productionPublicKeys = @[
-            [[MTDatacenterAuthPublicKey alloc] initWithPublicKey:@"-----BEGIN RSA PUBLIC KEY-----\n"
-             "MIIBCgKCAQEAu+3tvscWDAlEvVylTeMr5FpU2AjgqzoQHPjzp69r0YAtq0a8rX0M\n"
-             "Ue78F/FRAqBaEbZW6WBzF3AjOlNYpOtvvwGhl9rGCgziunbd9nwcKJBMDWS9O7Mz\n"
-             "/8xjz/swIB4V56XcjOhrjUHJ/GniFKoum00xeEcYnr5xnLesvpVMq97Ga6b+xt3H\n"
-             "RftHY/Zy1dG5zs8upuiAOlEiKilhu1IthfMjFG3NF6TiGrO9YU3YixFbJy67jtHk\n"
-             "v5FarscM2fC5iWQ2eP1y6jXR64sGU3QjncvozYOePrH9jGcnmzUmj42x/H28IjJQ\n"
-             "9EjEc22sPOuauK0IF2QiCGh+TfsKCK189wIDAQAB\n"
-             "-----END RSA PUBLIC KEY-----"]
+            [[MTDatacenterAuthPublicKey alloc] initWithPublicKey:@"-----BEGIN PUBLIC KEY-----\n"
+             "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy2+9TLsRl6RJV6QG7yXO\n"
+             "Y195odD8+Arn4lBpItEJnPNvvySU12YsOZOtnYi637dc7nEh7LNlAN/pcfq/7IkR\n"
+             "dPayP/pjiDa4i+aSGU01jHv0odR91HeufV5GQS/kfGHQEcehMjYZ5Nj+X4XpoU8z\n"
+             "jM9YSoGzsX3cm1GG8qlO3TYa5D5EfxtwiAFlDnG/ZD2FoAFtnf7iuWx5WHpHLTli\n"
+             "lrXj7tgCQPwvkia7jc5Vekbxy3InYF4CFqzOkmRZfh7yXp8CukgWMk5ujj5vQ5Qw\n"
+             "R8XiLPEI+QO39BiyUu0g2OtOj2oq3hKd9JXKK+T6dkFXbpMy14DNbRIg0qEftHqM\n"
+             "uQIDAQAB\n"
+             "-----END PUBLIC KEY-----"]
         ];
     });
     if (isProduction) {
